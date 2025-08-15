@@ -1,0 +1,162 @@
+/* Main Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+/* Form Styles */
+#regForm {
+    margin-bottom: 40px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.name-fields .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.show-pwd {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #7f8c8d;
+}
+
+.hint {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    display: block;
+    margin-top: 5px;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background: #2ecc71;
+    color: white;
+}
+
+button[type="reset"] {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Table Styles */
+.users-section {
+    margin-top: 40px;
+}
+
+#usersTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#usersTable th {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+#usersTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#usersTable tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .name-fields {
+        flex-direction: column;
+        gap: 0;
+    }
+}
